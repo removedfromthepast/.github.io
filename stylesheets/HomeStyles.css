@@ -9,7 +9,7 @@
 
 body {
     margin: 0%;
-    padding: 2px;
+    padding: 0px;
     background-color: #04013b;
 }
 
@@ -102,8 +102,7 @@ header img {
 
 .download-page {
     margin: 10px;
-    padding-bottom: 30px;
-    padding-left: 60px;
+    padding: 20px 60px 30px;
     border-radius: 20px;
     background-color: #430053;
 }

@@ -9,7 +9,7 @@
 
 body {
     margin: 0%;
-    padding: 2px;
+    padding: 0px;
     background-color: #04013b;
 }
 
@@ -69,8 +69,19 @@ header img {
 /* contenu dela page */
 
 .mid-page {
-    padding: 40px;
-    margin: 10px;
+    padding: 15px;
+}
+
+div {
+    padding: 20px 40px;
+    border-radius: 20px;
+    height: min-content;
+    background-color: transparent ;
+}
+
+div:hover {
+    background-color: #2f0353;
+    transition: 0.5s;
 }
 
 .link {

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+* {
+    font-family: 'Montserrat', serif;
+    font-size: 20px;
+    color: #f803fc;
+}
+
+body {
+    margin: 0%;
+    padding: 2px;
+    background-color: #04013b;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #844b85;
+    border-radius: 5px;
+}
+
+/* entête de page */
+
+.top-page {
+    padding: 3px;
+    height: 200px;
+}
+
+header {
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;
+    padding-left: 25px;
+    padding: 20px;
+}
+
+header img {
+    width: 45px;
+}
+
+.top-phrase {
+    font-family: 'Merriweather';
+    text-align: left;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* menu de navigation */
+
+.menu-principal {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-style: bold;
+    width: 400px;
+}
+
+.menu-principal li:hover a{
+    color: #f803fc;
+    font-size: 16px;
+}
+
+.button {
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+.RFTP {
+    background: url("../ProjetImages/MenuPrincipal.png");
+    background-size: cover;
+    height: 300px;
+    padding-left: 20px;
+}
+
+/* mid-page */
+
+.mid-page {
+    padding: 20px;
+    margin: 10px;
+    margin-top: 200px;
+}
+
+.paragraph {
+    font-family: 'Merriweather';
+    text-align: center;
+}
+
+.mid-page img {
+    width: 30px;
+}
+
+/* téléchargement */
+
+.download-page {
+    margin: 10px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    border-radius: 20px;
+    background-color: #430053;
+}
+
+.download {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.download-paragraph {
+    font-family: 'Merriweather';
+    font-size: 20px;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.download h2 {
+    font-family: 'Montserrat';
+    font-size: 17px;
+}
+
+.download a {
+    padding-left: 100px;
+}
+
+button {
+    background-color: darkviolet;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+    color: white;
+    text-align: center;
+}
+
+button:hover {
+    background-color: purple;
+    color: #d1b054;
+}
+
+/* end-page */
+
+.end-page {
+    background-color: black;
+    border-top: solid;
+    border-width: 2px;
+    border-color: white;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.endtitle {
+    font-size: 15px;
+}
+.end-mail{
+    font-family: 'Montserrat';
+    font-size: 10px;
+}

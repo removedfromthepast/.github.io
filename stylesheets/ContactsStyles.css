@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+* {
+    font-family: 'Montserrat', serif;
+    font-size: 20px;
+    color: #f803fc;
+}
+
+body {
+    margin: 0%;
+    padding: 2px;
+    background-color: #04013b;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #844b85;
+    border-radius: 5px;
+}
+
+/* entête de page */
+
+.top-page {
+    padding: 3px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-style: bold;
+    padding-left: 25px;
+    padding: 20px;
+}
+
+header img {
+    width: 45px;
+}
+
+.top-phrase {
+    font-family: 'Merriweather';
+    text-align: left;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* menu de navigation */
+
+.menu-principal {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 400px;
+}
+
+.menu-principal li:hover a{
+    color: #f803fc;
+    font-size: 16px;
+}
+
+.button {
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+/* contenu dela page */
+
+.mid-page {
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.personna1 {
+    background-color: #430053;
+    padding: 40px;
+}
+
+.personna2 {
+    background-color: #04013b;
+    padding: 40px;
+}
+
+.name {
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+.text-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img {
+    border-radius: 50%;
+    width: 300px;
+}
+
+.paragraph {
+    padding-left: 30px;
+    font-family: 'Merriweather';
+    font-size: 17px;
+    text-align: center;
+}
+
+.paragraph em {
+    font-family: 'Merriweather';
+    font-size: 17px;
+}
+
+.mail {
+    font-family: 'Montserrat';
+    font-size: 10px;
+    color: white;
+    text-align: right;
+    text-decoration: none;
+}
+
+/* pied de page */
+
+.end-page {
+    background-color: black;
+    border-top: solid;
+    border-width: 2px;
+    border-color: white;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.endtitle {
+    font-size: 15px;
+}
+
+.end-mail{
+    font-family: 'Montserrat';
+    color: #f803fc;
+    font-size: 10px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf8">
+        <link rel="stylesheet" href="stylesheets/BlogStyles.css">
+        <title>Download Removed From The Past</title>
+    </head>
+    <body>
+
+        <!--haut de page-->
+        <section class="top-page">
+            <header>
+                <img src="ProjetImages/TIMESOFT DEV.png" alt="Logo du studio de développement">
+                <h3 class="top-phrase">Pour en savoir plus sur la création du jeu !</h3>
+                <nav class="menu-principal">
+                    <li><a class="button" href="./HomePage.html">Accueil</a></li>
+                    <li><a class="button" href="./BlogPage.html">L'épopée</a></li>
+                    <li><a class="button" href="./ContactsPage.html">Contacts</a></li>
+                    <li><a class="button" href="./AnnexePage.html">Annexe</a></li>
+                </nav>
+            </header>
+        </section>
+
+        <!--contenu-->
+        <section class="mid-page">
+            <div class="select">
+                <ul>
+                    <li> 
+                        <button onclick="showOrHide(1)">Le projet S2 à l'EPITA</button> 
+                        <div id="content1">
+                            <p>
+                                <!--Paragraphe sur le projet S2 en général (pour tout les groupe)
+                                    expliquer ce que c'est et son déroulement sans exemple personel-->
+                                Comme vous l'aurez peut-être déjà compris, nous sommes tous les quatre des étudiants en première année à l'EPITA.
+                                Dans ce contexte, au deuxième semestre il nous est demandé de nous grouper pour un projet libre : 5 mois pour créer ce que l'on veux.
+                                <br/>
+                                <br/>
+                                Evidemment il y a des contraintes. La plupart des étudiants choisissent de faire un jeu video. 
+                                La première étape : il faut former un groupe de 3 à 4 étudiants de la promo.
+                                <br/>
+                                Ensuite vient le temps des idées. « Que faire ? », « Comment faire ? », « De quoi a-t-on besoin ? », etc.
+                                Fin janvier, tout est récapitulé dans le <em>Cahier des Charges</em> (ou <em>CdC</em> pour les intimes).
+                                <br/>
+                                Nous avons 3 soutenances durant ces 5 mois qui permettent aux professeurs de suivre nos avancées.
+                                La première soutenance sert à revoir les idées et le CdC, et à corriger les erreurs de début ou à rediriger les groupes qui voudraient faire des choses trop compliquées.
+                                La seconde permet de revoir les derniers détails 
+                                <!--fin du paragraphe-->
+                            </p>
+                            <img src="./ProjetImages/Personnage principal.png" alt="Le personnage principal du jeu">
+                        </div>
+                    </li>
+                    <li>
+                        <button onclick="showOrHide(2)">Idées et concepts</button>
+                        <div id="content2">
+                            <p>
+                                <!--Paragraphe sur les premières idées du projet (début janvier)
+                                    RPG 2D, inspirations etc.-->
+                                (A remplir)
+                                <!--fin du paragraphe-->
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <button onclick="showOrHide(3)">Histoire et graphismes</button>
+                        <div id="content3">
+                            <p>
+                                <!--Paragraphe sur l'histoire et les graphismes du jeu
+                                    synopsis, quêtes, map, perso, etc.-->
+                                (A remplir)
+                                <!--fin du paragraphe-->
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <button onclick="showOrHide(4)">Les menus principal et in-game</button>
+                        <div id="content4">
+                            <p>
+                                <!--Paragraphe sur le menu principal
+                                    design et implémentation, options, commandes, in-game, etc.-->
+                                (A remplir)
+                                <!--fin du paragraphe-->
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <button onclick="showOrHide(5)">Le mode histoire</button>
+                        <div id="content5">
+                            <p>
+                                <!--Paragraphe sur le mode solo
+                                    implémentation game et son-->
+                                (A remplir)
+                                <!--fin du paragraphe-->
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <button onclick="showOrHide(6)">Le multijoueur</button>
+                        <div id="content6">
+                            <p>
+                                <!--Paragraphe sur le mode multi
+                                    implémentation multijoueur-->
+                                (A remplir)
+                                <!--fin du paragraphe-->
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--cacher le contenu-->
+        <script>
+            function showOrHide(i) {
+                var id = document.getElementById("content" + i.toString())
+                if (id.style.display === 'none') {
+                    id.style.display = 'contents';
+                } 
+                else {
+                    id.style.display = 'none';
+                }
+            }
+        </script>
+        
+        <!--bas de page-->
+        <footer class="end-page">
+            <h3 class="endtitle">Removed From The Past</h3>
+            <a class="end-mail">removedfromthepast@gmail.com</a>
+        </footer>
+
+    </body>
+</html>

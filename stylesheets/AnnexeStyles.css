@@ -70,12 +70,16 @@ header img {
 
 .mid-page {
     padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
 }
 
 div {
     padding: 20px 40px;
     border-radius: 20px;
     height: min-content;
+    width: 25em;
     background-color: transparent ;
 }
 
@@ -87,17 +91,26 @@ div:hover {
 .link {
     display: block;
     justify-content: center;
+    align-items: center;
 }
 
 .link li {
-    padding: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px 10px;
     list-style: none;
 }
 
 .link li a {
+    margin-left: 20px;
     text-align: center;
     text-decoration: none;
     color: white;
+}
+
+.link li img {
+    width: 100px;
 }
 
 .link li a:hover {

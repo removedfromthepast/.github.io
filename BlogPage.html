@@ -55,8 +55,15 @@
                             <p>
                                 <!--Paragraphe sur les premières idées du projet (début janvier)
                                     RPG 2D, inspirations etc.-->
-                                Notre équipe est tout de suite parti sur un jeu vidéo comme la majorité. Nous voulions dès le début faire un jeu en 2D et c'est ce projet que nous vous présentons ici. 
-                                Les jeux tels que Pokémon ou The Legend of Zelda nous ont beaucoup inspiré car nous les aimons tous. Apprendre à réaliser un jeu de ce type a donc été très intéressant.
+                                    Depuis le début de notre réflexion, nous avons pensé à un jeu vidéo 2D sur ordinateur, et cela en C\# à l’aide de Unity. Nous n’avons pas dérivé de cette idée depuis. Cependant, notre première idée se présentait plus sous la forme d’un jeu tel que The Legend of Zelda. <br/>
+                                    Après plusieurs séances de réflexion et pour satisfaire tout le monde, nous avons apporté des modifications en conséquence. Nous avons opté pour un jeu qui ressemble alors plus à un RPG (Role Playing Game). Nous sommes donc partis sur cette dernière idée, avec une histoire complètement nouvelle et inventée de toutes pièces à vous présenter. <br/>
+                                    Ce jeu est donc un jeu entièrement en 2D basé sur un style RPG avec une vue de 45 degrés. Le but principal du jeu est de se balader dans le monde et de se battre contre des ennemis. Il existe une histoire principale qui est accessible en jouant seul et aussi un mode multijoueur, où l'histoire est désactivée et qui permet 2 personnes de jouer sur une même partie. <br/>
+                                    Comme dans un RPG classique, de ennemis se déplacent sur la carte et les toucher lance un combat. Le joueur dirige un personnage qu'il doit alors faire monter de niveau en combattant ou en réalisant des quêtes, tout en pouvant s'aider d'objets qu'il peut trouver sur la carte, dans des magasins ou bien en battant des ennemis. <br/>
+                                    Notre projet est un mélange de plusieurs façons de jouer, inspiré par plusieurs licences ou idées préexistantes. Ici, nous nous rapprochons le plus d’un RPG. Le premier RPG connu et publié remonte à 1975 avec le jeu dnd. <br/>
+                                    Ce jeu a été développé par deux Américains, Gary Whisenhunt et Ray Wood. Le joueur peut contrôler un personnage et doit affronter des adversaires à la recherche d’un trésor pour remporter le jeu. Notre projet suit d’une certaine manière cette méthode. Nous avons effectivement repris des idées de système de combat des adversaires digne d’un RPG tel que Pokémon. 
+                                    Ce système se reflète sous la forme de combats en tour par tour afin de laisser une partie du combat sur la stratégie et la réflexion en plus de la force du personnage. <br/>
+                                    Les graphismes en 2D peuvent rappeler ceux de Undertale ou One Shot. Ce style de graphisme permet de poser une atmosphère différente des jeux en 3D, accompagné de sa musique. Ces points aident le joueur à s’investir dans le jeu et à y rester attaché. <br/>
+                                    Le principal point fort du RPG reste que même une fois l’histoire principale terminée, le jeu reste tout de même intéressant. Les ennemis sont toujours présents, il est possible de se promener dans le monde librement autant de temps que nous voulons. <br/>
                                 <!--fin du paragraphe-->
                             </p>
                         </div>
@@ -67,7 +74,14 @@
                             <p>
                                 <!--Paragraphe sur l'histoire et les graphismes du jeu
                                     synopsis, quêtes, map, perso, etc.-->
-                                (A remplir)
+                                    Synopsis : <br/>
+                                    En sortant de l’hôpital, un portail s’ouvre devant toi. Tu distingues deux hommes armés qui s’approchent de plus en plus de toi avant que ta vue ne se trouble et que tes yeux ne se ferment. Entraîné dans un temps qui n’est pas le tien, là où règne le chaos, sauras-tu faire le chemin retour vers ta soeur alitée pour la sauver de sa maladie ?
+                                    <br/>
+                                    <br/>
+                                    Contexte : <br/>
+                                    Dans le futur la population humaine est drastiquement plus faible à cause d’une pandémie qui ruina les contrés les unes après les autres tuant plusieurs milliards de gens, et ce malgré l’amélioration de la médecine. Le virus qui en est la cause fut surnommé le Brain Killer car il rend les contaminés complètement amnésiques en quelques mois. Pour pallier ce mal, un laboratoire se lança dans la poursuite d’un remède. <br/>
+                                    En besoin de cobayes et profitant de la technologie avancée de voyage temporel vers le passé, le laboratoire décida de chercher ses patients tests dans les esquisses des bâtiments cités.
+                                    Une temporalité différente. Le laboratoire se situe dans une des villes fortifiées construites après la crise internationale que le virus a causée. Dans ces villes se regroupent la technologie et les personnes de génies. <br/>
                                 <!--fin du paragraphe-->
                             </p>
                         </div>
@@ -100,7 +114,23 @@
                             <p>
                                 <!--Paragraphe sur le mode multi
                                     implémentation multijoueur-->
-                                (A remplir)
+                                    Le multijoueur a  ́et ́e la partie la plus difficile pour moi parmi tout le projet.
+                                    C’ ́etait une notion que je ne connaissais absolument pas du cˆot ́e de la program-
+                                    mation et j’ai donc pu d ́ecouvrir un aspect de Unity que je n’avais pas d ́ecouvert
+                                    au d ́ebut du projet. Le mode multijoueur est détaché de l'histoire principale et ne permet que de lancer des combats ou récupérer des objets. Toutes les quêtes et la scène d'introduction qui se trouve dans le mode solo n'existent pas ici. Le jeu est alors simplifié en multijoueur, mais n'en reste pas moins amusant. 
+                                    Cependant, nous avons tout de même dû laisser des sauvegardes pour le multijoueur, que j'ai aussi du réécrire pour l'adapter à deux joueurs. Il suffit simplement de changer les scripts "pseudo" en "pseudo1" et "pseudo2", mettant les données dans la bonne sauvegarde pour le joueur serveur et le joueur client. 
+                                    J'ai fait le choix d'utiliser le module Mirror disponible sur Unity afin de créer mon multijoueur. Mirror est une API en réseau de haut niveau qui prend en charge différents transports de bas niveau. Il est alors devenu possible de jouer à plusieurs sur un seul ordinateur, mais également à deux sur deux ordinateurs différents en réseau local. 
+                                    Comme dit précédemment, le multijoueur était assez compliqué à comprendre, même avec certaines documentations, donc j'ai préféré réaliser un multijoueur à seulement deux joueurs plutôt qu'avec de nombreux joueurs mais non fonctionnel. De plus, l'affichage est alors plus clair et plus compréhensible. 
+                                    La première notion de Mirror que j'ai pu rencontrer est celle du NetworkManager. C'est en effet cet objet, préinstallé avec de nombreux scripts, qui permet de connecter plusieurs joueurs sur une et même partie. Pour ce projet, j'ai du mettre l'option Client Authority en vrai afin que le client puisse lui aussi envoyer des données au serveur. 
+                                    En effet, en temps normal, seul le serveur peut envoyer des données aux clients. L'inverse donne un trop grand pouvoir au client, et il devient alors dangereux pour le jeu d'activer cette fonction, surtout dans un jeu pouvant accueillir un grand nombre de client. 
+                                    Il a donc également fallu que je glisse l'objet préfabriqué du nouveau joueur spécialement conçu pour le multijoueur dans la case qui permet au NetworkManager de créer le joueur actuel. 
+                                    En premier, pour créer le multijoueur, j'ai essayé de simplement dupliquer les scènes utilisées dans le mode solo. Malheureusement, ce n'est pas aussi simple. Un grand problème que j'ai rencontré dès le début est que dans un grand nombre de mes codes en solo, j'utilisais le Box Collider 2D associé au joueur. Il a donc fallut que je réécrive la plupart de mes codes pour les adapter au multijoueur. 
+                                    J'ai trouvé la solution d'utiliser un tag "Player" pour que les autres Box Collider 2D présents dans la scène puisse déterminer si l'objet qu'il touche est un joueur. 
+                                    Par soucis de simplicité, j'ai également mis les trois scènes que nous pouvons trouver pour le mode solo en une seule et même scène pour le multijoueur. En effet, je n'ai pas trouvé la documentation nécessaire pour changer un seul joueur de scène. 
+                                    A la place, les scènes sont espacées pour ne pas toutes les apercevoir en même temps. Nous déplaçons alors simplement les coordonnées du personnage pour qu'il puisse passer au bon endroit automatiquement, toujours grâce à la porte principale. 
+                                    Pour les combats, j'ai alors décidé de créer deux scènes de combats différentes pour les deux joueurs. En effet, quand les deux joueurs étaient sur la même partie, des problèmes était alors créer. Grâce à cette méthode, le jeu peut alors savoir si le joueur en combat est le serveur ou le client et peut donc modifier les statistiques du bon personnage. 
+                                    J'ai donc dû à nouveau créer deux scripts différents pour les deux scènes de combat. Les scripts enregistrent alors des booléens pour savoir si le client est en combat et/ou le serveur est en combat. Effectivement, les deux joueurs peuvent alors être en combat en même temps. 
+                                    Et pour finir, lorsque le client connecté quitte le mode multijoueur, il se retrouve à nouveau sur le menu principal. Pour cela, j'ai simplement dû glisser la scène du menu principal dans le paramètre Offline du NetworkManager pour que le jeu ramène directement à cette scène. 
                                 <!--fin du paragraphe-->
                             </p>
                         </div>

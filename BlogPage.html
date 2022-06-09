@@ -75,13 +75,24 @@
                                 <!--Paragraphe sur l'histoire et les graphismes du jeu
                                     synopsis, quêtes, map, perso, etc.-->
                                     Synopsis : <br/>
-                                    En sortant de l’hôpital, un portail s’ouvre devant toi. Tu distingues deux hommes armés qui s’approchent de plus en plus de toi avant que ta vue ne se trouble et que tes yeux ne se ferment. Entraîné dans un temps qui n’est pas le tien, là où règne le chaos, sauras-tu faire le chemin retour vers ta soeur alitée pour la sauver de sa maladie ?
-                                    <br/>
+                                    En sortant de l’hôpital, un portail s’ouvre devant toi. Tu distingues deux hommes armés qui s’approchent de plus en plus de toi avant que ta vue ne se trouble et que tes yeux ne se ferment. Entraîné dans un temps qui n’est pas le tien, là où règne le chaos, sauras-tu faire le chemin retour vers ta soeur alitée pour la sauver de sa maladie ? <br/>
                                     <br/>
                                     Contexte : <br/>
                                     Dans le futur la population humaine est drastiquement plus faible à cause d’une pandémie qui ruina les contrés les unes après les autres tuant plusieurs milliards de gens, et ce malgré l’amélioration de la médecine. Le virus qui en est la cause fut surnommé le Brain Killer car il rend les contaminés complètement amnésiques en quelques mois. Pour pallier ce mal, un laboratoire se lança dans la poursuite d’un remède. <br/>
                                     En besoin de cobayes et profitant de la technologie avancée de voyage temporel vers le passé, le laboratoire décida de chercher ses patients tests dans les esquisses des bâtiments cités.
                                     Une temporalité différente. Le laboratoire se situe dans une des villes fortifiées construites après la crise internationale que le virus a causée. Dans ces villes se regroupent la technologie et les personnes de génies. <br/>
+                                    <br/>
+                                    Histoire principale du jeu : <br/>
+                                    Le joueur se retrouve donc dans ce nouveau monde et dans cette situation des plus compliqués. Le joueur doit, dans un premier temps, s’enfuir du laboratoire. Une fois sorti du laboratoire, le joueur découvre le monde et notamment les différents magasins du jeu. Après s’être familiarisé avec ce nouveau monde, il découvre qu’il existe un moyen de rentrer chez lui et cherche donc à obtenir ce moyen pour retourner auprès de sa soeur. <br/>
+                                    Pour cela il sort de la ville et découvre le monde extérieur ou il apprend qu’il existe un remède pour sa soeur. Sachant cela, le joueur va chercher ce remède. Ainsi lorsque le joueur possède et le remède et le moyen de rentrer le joueur dois retourner dans son époque et soigné sa soeur. <br/>
+                                    Afin que le joueur suive l’histoire qui lui est conté dans l’ordre chronologique, il est important de concevoir un système de quêtes et d’objectifs à atteindre. J’ai donc découpé l’histoire en chapitres contenant une ou plusieurs quêtes principales et des quêtes annexes (sorte de succès du joueur). Les quêtes se déclenchent en interagissant avec des PNJ (personnages non-joueurs) ou des objets spécifiques. <br/>
+                                    Pour avancer dans l’histoire le joueur devra compléter les quêtes principales de chaque chapitre a minima. Le jeu à jouer se termine donc à la fin de la dernière quête principale du jeu. Après cela, la partie se fini sur une cinématique. Il est à noter que tout ceci n’existe encore que sur le papier et reste encore à être implémenté. <br/>
+                                    <br/>
+                                    <br/>
+                                    Ici, il fallait évidemment commencer avec les dessins du personnage principal. J'ai d'abord commencer a créer une base qui sera celle de toutes les autres personnages par la suite. Nous avons opter pour des vêtements plutôt modernes par rapport aux autres personnages dû à l'histoire du jeu, ainsi qu'un pull rouge. Le joueur ressort alors plus distinctement que les autres personnages à l'écran. <br/>
+                                    Les autres ennemis ont donc été créés ensuite. Par ceux-ci, nous pouvons retrouver des gardes, bandits, paranoïaques, chercheurs et directeurs de laboratoire qui sont présents dans la ville. Pour l'extérieur, nous avons également créé trois sortes de personnages infectés, inspirés visuellement de zombies. <br/>
+                                    Chaque personnage cité ci-dessus possède une animation. Celle-ci sont créés entièrement avec Unity. Avec les objets "Animator" et "Animation", nous avons tout ce qu'il faut. Les objets Animation permettent de créer une animation pour un seul cas, par exemple WalkLeft. Pour cela, il suffit de glisser différentes images du personnage à la suite et l'animation est prête. Il faut ensuite cependant l'appeler pour l'utiliser. <br/>
+                                    C'est à cela que sert l'Animator. Il permet de faire les transitions entre les différentes animations qui lui sont assignés selon des paramètres. <br/>
                                 <!--fin du paragraphe-->
                             </p>
                         </div>
@@ -92,7 +103,14 @@
                             <p>
                                 <!--Paragraphe sur le menu principal
                                     design et implémentation, options, commandes, in-game, etc.-->
-                                (A remplir)
+                                Au lancement du jeu, nous arrivons en premier sur le menu principal. Celui-ci se présente avec une image de fond représentant la ville du jeu, où l'endroit principal du jeu. Après plusieurs essais (cf Annexes), nous nous sommes fixés sur l'image ci-dessous. Le grand bâtiment dans le fond représente la mairie de la ville. Le joueur est alors immédiatement plongé dans le jeu, dans la ville qu'il va parcourir. <br/>
+                                Devant ce fond, nous pouvons voir des boutons. C'est avec ceux-ci que le joueur peut lancer le jeu, accéder aux commandes, aux options ou quitter le jeu. C'est également moi qui ai réalisé les images des boutons. Le violet est la couleur principale dans notre jeu, vous pourrez voir qu'elle revient assez souvent. <br/>
+                                Pour se déplacer sur les boutons, nous pouvons utiliser le mode Navigation (Figure 5), que nous allons utilisés sur tous les autres boutons présents dans le jeu. En mettant le mode Navigation en Explicit, il est alors possible de changer de boutons uniquement avec les flèches et sans avoir besoin de la souris. <br/>
+                                Solène a également réalisé le second menu pour le multijoueur en me basant sur la base du second menu en solo. En premier, une indication est la pour le joueur afin de l'aider. Il doit alors en premier choisir de rejoindre la partie en temps que serveur ou client. Ces boutons sont créés automatiquement par Mirror. <br/>
+                                Yann est responsable de la mise en fonction des boutons du menu principal. Il a utilisé des panel pour que quand on appuie sur les boutons, on puisse ouvrir une fenêtre pour les autres boutons : histoire, commande et options. <br/>
+                                Un problème que nous avons eu avec le MainMenu est que l'affichage se retrouvait en dehors de l'écran. Pour résoudre ce problème, nous avons mis les panels en "scale with screen size" à la place de "constant pixel size". <br/>
+                                Quand on crée une nouvelle partie, on efface les anciennes données et initialise les nouvelles données principales telles que les coordonnées, la scène, mais aussi les statistiques initiales. <br/>
+                                Lorsque l'on lance le jeu avec le bouton charger la partie, on vérifie si une sauvegarde existe. Si elle existe alors on lance directement le jeu qui chargera automatiquement les données. S'il n'existe aucune sauvegarde alors un message d'erreur apparaît. <br/>
                                 <!--fin du paragraphe-->
                             </p>
                         </div>
@@ -103,7 +121,24 @@
                             <p>
                                 <!--Paragraphe sur le mode solo
                                     implémentation game et son-->
-                                (A remplir)
+                                Nous voulions cr ́eer une ambiance unique pour le jeu. J’ai donc continu ́e
+                                la cr ́eation des sons et musiques du jeu. Je dispose maintenant d’un panel
+                                d’une dizaine de bruitages diff ́erents (bruits de pas, bruits de respiration, bruits
+                                d’attaque, bruits de vent, etc.) et de trois musiques (musique de ville, musique
+                                de combat, musique de campagne).
+                                Les sons et musiques ont  ́et ́e produits grˆace `a FL Studio.
+                                Il y a `a pr ́esent des musiques dans toutes les diff ́erentes sc`enes du jeu, per-
+                                mettant de faire varier l’ambiance dans laquelle le joueur est plong ́ee.
+                                <br/>
+                                <br/>
+                                Pour placer les objets sur Unity afin de créer une carte, il suffit de créer des tilemap. Celles-ci apparaissent sous un objet appelé Grid. Nous pouvons alors en créer plusieurs avec des ordres plus ou moins élevés afin de créer une impression de perspective entre les différents objets. Certaines tilemaps possèdent également des tilemap colliders qui permettent d'empêcher le joueur de passer à travers les objets. <br/>
+                                Il est alors possible de créer des "Palettes" qui contiennent les différentes images utilisées comme des pinceaux, une fois dans Unity. Il devient alors possible d’appliquer ces textures directement sur la scène de Unity. Cet outil est extrêmement pratique et rend alors la création de carte très facile. <br/>
+                                Ces colliders ont parfois du être modifiés afin de créer encore plus de perspectives. Pour cela, il a fallu modifier les physiques du sprite même. Il suffit de générer les côtés puis de les modifier manuellement. Après cela, le joueur peut alors passer sa tête sur le bas d'un bâtiment et cacher ses pieds à l'arrière de celui-ci par exemple. Il a également fallu créer 2 tilemaps différentes pour cela, une avec un ordre inférieur au joueur et l'autre avec un ordre supérieur. <br/>
+                                Pour délimiter les terrains, nous avons utilisé des objets qui sont en corrélation avec l'histoire. Pour la ville, celle-ci est entourée de murs qui empêche le joueur de sortir par un autre endroit que par la porte principale. Cette dernière permet donc de passer d'une scène à une autre, soit de la ville à l'extérieur ou inversement. L'extérieur, lui, est délimité par des arbres qui entourent la scène de jeu et l'extérieur du mur pour montrer que les deux endroits sont corrélés entre eux. Le joueur ne peut à nouveau pas aller plus loin que le visuel de la scène. <br/>
+                                Par ailleurs, dans la ville, des pavés se situent au pieds du joueur et se démarquent de l'herbe présente partout. Le joueur peut alors mieux se repérer dans l'espace et avec la mini carte implémentée. C'est aussi comme une sorte d'indication pour l'endroit où se trouve les bâtiments. <br/>
+                                Pour pouvoir ramasser et stocker dans l'inventaire, on a du passer par des sprite renderer qui ont permis de stocker les objets dans l'inventaire. On a mis des box colliders 2D et au contact des box colliders 2D l'objet est ramassé, stocker dans l'inventaire et détruite. <br/>
+                                De plus nous avons dessiner des bâtiments, des objets tels que des maisons ou encore des poubelles. <br/>
+                                L'idée originale était que le joueur pour se déconnecter se situe proche d'un lit et que la partie actuelle soit sauvegardée. Cependant, la sauvegarde a lieu lors de chaque combat ou lorsque le joueur va dans le menu option. Par conséquent, le joueur réapparaît à la dernière position sauvegarde. <br/>
                                 <!--fin du paragraphe-->
                             </p>
                         </div>
